@@ -1,6 +1,6 @@
 PSFDS_IMAGE=psfds
 JUPYTER_IMAGE=psfds_jupyter
-
+ 
 jupyter:
 	docker run --rm -v $(PWD):/src -p 8893:8893 $(JUPYTER_IMAGE) jupyter lab --allow-root --port=8893 --ip 0.0.0.0 --no-browser
 
